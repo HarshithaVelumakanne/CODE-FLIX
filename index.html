@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Flix</title>
+
+    <!-- favicon link -->
+    <link rel="icon" type="image/x-icon" href="images/codeflix-icon.ico">
+
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- link the css file-->
+    <link rel="stylesheet" href="styles.css" />
+   
+  </head>
+  <body>
+
+    <!-- header section start -->
+    <header class="header">
+        <section class="flex">
+            <a href="#home" class="logo"><span>&lt;&sol;&gt;CODE</span> FLIX</a>
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#guided-paths">Guided Paths</a>
+                <a href="#practice">practice</a>
+                <a href="#contact">contact</a>
+            </nav>
+            <div class="themeAndMenu">
+                <img src="images/moon.png" alt="" id="theme"  onclick="changeTheme()">
+                <div id="menu-btn" class="fas fa-bars" onclick="f()"></div>
+            </div>
+        </section>
+    </header>
+    <!-- header section end -->
+
+    <!-- home section start -->
+    <div id="home">
+        <section class="home" >
+            <div class="row">
+                <div class="content">
+                    <h3>Learn with <span>Code Flix</span> </h3>
+                    <h4>The Ultimate Guide To Ace Interviews</h4>
+                </div>
+                <div class="image">
+                    <img src="images/home-image.png" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- home section end -->
+
+    <!-- counter section start -->
+    <div id="count">
+        <section class="count">
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/basics.png" alt="">
+                    <h3>Build basics</h3>
+                </div>
+                <div class="box">
+                    <img src="images/solve.png" alt="">
+                    <h3>Solve examples</h3>
+                </div>
+                <div class="box">
+                    <img src="images/logic.png" alt="">
+                    <h3>Improve logic</h3>
+                </div>
+                <div class="box">
+                    <img src="images/dsa.png" alt="">
+                    <h3>Practice DSA</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- counter section end -->
+   
+
+   <!-- about section start -->
+    <div id="about">
+        <section class="about" >
+            <div class="row">
+                <div class="image">
+                    <img src="images/about-image.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>About us</h3>
+                    <p>
+                      Hello! Welcome to Code Flix! Really happy to see you here.<br/>
+                      CodeFlix provides a structured way to learn about various
+                      technologies. We have compiled the top videos from various YouTube
+                      channels for each course. So, if you are a beginner, you will not
+                      have to spend a lot of time searching for accurate information. We
+                      encourage you to follow our guided paths and to keep coding.<br/>
+                      For any additional questions, email us at teamcodeflix@gmail.com
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- about section start -->
+    
+    <!-- Guided paths section start -->
+    <div id="guided-paths">
+        <h1 class="heading">Explore Guided Paths 🔥</h1>
+    
+        <section class="select">
+            <div class="box-container">
+                <div class="option active-option" onclick="openAll()">
+                    <h3>All Courses</h3>
+                </div>
+                <div  class="option" onclick="openDetails('pro')">
+                    <h3>Programming Languages</h3>
+                </div>
+                <div class="option" onclick="openDetails('dsa')">
+                    <h3>Data Structures & Algo</h3>
+                </div>
+                <div class="option" onclick="openDetails('dev')">
+                    <h3>Frontend Development</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="category active-box" id="pro">
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/c-language-image.png" alt="">
+                    <h3>Basics of C</h3>
+                    <p>channel : Mohit Sir Ki Class</p>
+                    <div class="icons">
+                       <p><i class="fas fa-book"></i>100+ Problems</p>
+                       <p><i class="far fa-clock"></i>15 Hours</p>
+                    </div>
+                    <button class="watch">
+                        <a
+                        href="https://www.youtube.com/playlist?list=PL9Z3bt4d5vJ8RK96kJUdGPMh31SviONu1"
+                        target="_blank"
+                          >Watch Videos</a
+                        >
+                    </button>
+                </div>
+                <div class="box">
+                    <img src="images/c++-language-image.png" alt="">
+                    <h3>Basics of C++</h3>
+                    <p>Channel : Sudhakar Atchala</p>
+                    <div class="icons">
+                       <p><i class="fas fa-book"></i>100+ Problems</p>
+                       <p><i class="far fa-clock"></i>15+ Hours</p>
+                    </div>
+                    <button class="watch">
+                        <a
+                          href="https://www.youtube.com/playlist?list=PLXj4XH7LcRfCmm6ZT-R_33bxLY1fvcm_o"
+                          target="_blank"
+                          >Watch Videos</a
+                        >
+                      </button>
+                </div>
+                <div class="box">
+                    <img src="images/java-language-image.png" alt="">
+                    <h3>Basics of Java</h3>
+                    <p>Channel : Sundeep Saradhi</p>
+                    <div class="icons">
+                       <p><i class="fas fa-book"></i>100+ Problems</p>
+                       <p><i class="far fa-clock"></i>15+ Hours</p>
+                    </div>
+                    <button class="watch">
+                        <a
+                          href="https://www.youtube.com/playlist?list=PLLOxZwkBK52BaOQCJrVvkc97uzeMsx9TT"
+                          target="_blank"
+                          >Watch Videos</a
+                        >
+                      </button>
+                </div>
+                <div class="box">
+                    <img src="images/python.png" alt="">
+                    <h3>Basics of Python</h3>
+                    <p>Channel : Sundeep Saradhi</p>
+                    <div class="icons">
+                       <p><i class="fas fa-book"></i>100+ Problems</p>
+                       <p><i class="far fa-clock"></i>15+ Hours</p>
+                    </div>
+                    <button class="watch"> 
+                        <a href="https://www.youtube.com/playlist?list=PLLOxZwkBK52DmuHRO3UNpqAzDF57FtIxk"
+                        target="_blank">Watch Videos</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="category active-box" id="dsa">
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/dsa-1.png" alt="">
+                    <h3>Coding Essentials For DSA</h3>
+                    <p>Udemy : Coding Minutes</p>
+                    <div class="icons">
+                       <p><i class="fas fa-book"></i>50+ Problems</p>
+                       <p><i class="far fa-clock"></i>5+ Hours</p>
+                    </div>
+                    <button class="watch"> 
+                        <a href="https://www.udemy.com/course/learn-coding-for-beginners/?couponCode=MAR495"
+                        target="_blank" >Watch Videos</a>
+                    </button>
+                </div>
+                <div class="box">
+                    <img src="images/dsa-2.png" alt="">
+                    <h3>Complete C++ DSA Course</h3>
+                    <p>Channel : Codehelp by Babbar</p>
+                    <div class="icons">
+                       <p><i class="fas fa-book"></i>350+ Problems</p>
+                       <p><i class="far fa-clock"></i>60+ Hours</p>
+                    </div>
+                    <button class="watch">
+                        <a
+                          href="https://www.youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA"
+                          target="_blank"
+                          >Watch Videos</a
+                        >
+                      </button>
+                </div>
+                <div class="box">
+                    <img src="images/dsa-3.png" alt="">
+                    <h3>Complete Java DSA Course</h3>
+                    <p>Channel : Anuj Bhaiya</p>
+                    <div class="icons">
+                       <p><i class="fas fa-book"></i>350+ Problems</p>
+                       <p><i class="far fa-clock"></i>60+ Hours</p>
+                    </div>
+                    <button class="watch">
+                        <a
+                          href="https://www.youtube.com/playlist?list=PLUcsbZa0qzu3yNzzAxgvSgRobdUUJvz7p"
+                          target="_blank"
+                          >Watch Videos</a
+                        >
+                      </button>
+                </div>
+                <div class="box">
+                    <img src="images/dsa-4.png" alt="">
+                    <h3>Complete Python DSA Course</h3>
+                    <p>Channel : Coding Ninjas</p>
+                    <div class="icons">
+                       <p><i class="fas fa-book"></i>350+ Problems</p>
+                       <p><i class="far fa-clock"></i>60+ Hours</p>
+                    </div>
+                    <button class="watch">
+                        <a
+                          href="https://www.youtube.com/playlist?list=PLrk5tgtnMN6TYBW0-U4YhIRyYEVpqVEnJ"
+                          target="_blank"
+                          >Watch Videos</a
+                        >
+                      </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="category active-box" id="dev">
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/html-image.png" alt="">
+                    <h3>HTML Full Course</h3>
+                    <p>Channel : Apna College</p>
+                    <div class="icons">
+                       <p><i class="far fa-clock"></i>3+ Hours</p>
+                    </div>
+                    <button class="watch">
+                        <a
+                          href="https://www.youtube.com/watch?v=HcOc7P5BMi4"
+                          target="_blank"
+                          >Watch Videos</a
+                        >
+                      </button>
+                </div>
+                <div class="box">
+                    <img src="images/css-image.png" alt="">
+                    <h3>CSS Full Course</h3>
+                    <p>Channel : Simplilearn</p>
+                    <div class="icons">
+                       <p><i class="far fa-clock"></i>10+ Hours</p>
+                    </div>
+                    <button class="watch">
+                        <a
+                          href="https://www.youtube.com/playlist?list=PLEiEAq2VkUUKRQHAs-qm247LxjxhFd1Us"
+                          target="_blank"
+                          >Watch Videos</a
+                        >
+                      </button>
+                </div>
+                <div class="box">
+                    <img src="images/js-image.png" alt="">
+                    <h3>JavaScript Full Course</h3>
+                    <p>Channel : Akshay Saini</p>
+                    <div class="icons">
+                       <p><i class="far fa-clock"></i>20+ Hours</p>
+                    </div>
+                    <button class="watch">
+                        <a
+                          href="https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP"
+                          target="_blank"
+                          >Watch Videos</a
+                        >
+                      </button>
+                </div>
+                <div class="box">
+                    <img src="images/react-image.png" alt="">
+                    <h3>React Full Course</h3>
+                    <p>Channel : Code With Harry</p>
+                    <div class="icons">
+                       <p><i class="far fa-clock"></i>15+ Hours</p>
+                    </div>
+                    <button class="watch">
+                        <a
+                          href="https://www.youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt"
+                          target="_blank"
+                          >Watch Videos</a
+                        >
+                      </button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Guided paths section end -->
+
+    <!-- Parctice section start -->
+    <div id="practice">
+        <h1 class="heading">Practice Section</h1>
+        <section class="practice">
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/practice-pro.png" alt="">
+                    <h3>Programming Languages</h3>
+                    <p>Learn to program with our beginner-friendly tutorials and examples. Read tutorials, try examples and write code.</p>
+                    <a
+                    href="https://www.programiz.com/c-programming/examples"
+                    target="_blank"
+                    class="difficulty beg"
+                    >C Language 🔥</a>
+                    <a
+                    href="https://www.programiz.com/cpp-programming/examples"
+                    target="_blank"
+                    class="difficulty inter"
+                    >C++ Language 🔥</a>
+                    <a
+                    href="https://www.programiz.com/java-programming/examples"
+                    target="_blank"
+                    class="difficulty adv"
+                    >Java Language 🔥</a>
+                </div>
+                <div class="box">
+                    <img src="images/practice-dsa.png" alt="">
+                    <h3>Data Structures and Algo</h3>
+                    <p>Learn about Time and Space complexities. Learn the basics of individual Data Structures. Learn the basics of Algorithms.</p>
+                    <a
+                          href="https://www.hackerrank.com/domains/data-structures"
+                          target="_blank"
+                          class="difficulty beg"
+                          >Hackerrank 🔥</a>
+
+                          <a
+                          href="https://practice.geeksforgeeks.org/explore?page=1&sortBy=submissions"
+                          target="_blank"
+                          class="difficulty inter"
+                          >Geeeks For Geeks🔥</a>
+                          <a
+                          href="https://leetcode.com/problemset/all/"
+                          target="_blank"
+                          class="difficulty adv"
+                          >Leetcode 🔥</a>
+                </div>
+                <div class="box">
+                    <img src="images/practice-dev.png" alt="">
+                    <h3>Frontend Development</h3>
+                    <p>We provide a lot of free resources so that you can run and edit code on your own. This is the best way to learn development.</p>
+                    <a
+                href="https://www.w3schools.com/html/"
+                target="_blank"
+                class="difficulty beg"
+                >HTML 🔥</a>
+                <a
+                href="https://www.w3schools.com/css/default.asp"
+                target="_blank"
+                class="difficulty inter"
+                >CSS 🔥</a>
+              <a
+              href="https://www.w3schools.com/js/default.asp"
+              target="_blank"
+              class="difficulty adv"
+              >JavaScript 🔥</a>
+                </div>
+            </div>
+        </section>
+    </div>
+     <!-- Parctice section start -->
+
+     <!-- Team section start -->
+    <div id="team">
+        <h1 class="heading">Meet the Team</h1>
+        <section class="team" >
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/sreeya.png" alt="">
+                    <h3>Sreeya Porika</h3>
+                    <h6>B.Tech ECE , Kakatiya University</h6>
+                    <div class="social">
+                        <a href="#" class="fab fa-linkedin"></a>
+                        <a href="#" class="fab fa-github"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/anusha.png" alt="">
+                    <h3>Anusha Guguloth</h3>
+                    <h6>B.Tech EEE , Kakatiya University</h6>
+                    <div class="social">
+                        <a href="#" class="fab fa-linkedin"></a>
+                        <a href="#" class="fab fa-github"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/harshitha.png" alt="">
+                    <h3>Harshitha Velumakanne</h3>
+                    <h6>B.Tech ECE , Kakatiya University</h6>
+                    <div class="social">
+                        <a href="#" class="fab fa-linkedin"></a>
+                        <a href="#" class="fab fa-github"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>    
+     <!-- Team section start -->
+
+    
+    <!-- contact section  start -->
+    <div id="contact">
+        <section class="contact" >
+            <div class="box-container">
+                <div class="image">
+                    <img src="images/contact-image.png" alt="">
+                </div>
+                <form action="">
+                    <h3 class="heading-left">Send us a message</h3>
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                    <input type="text" placeholder="subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                    <input type="submit" class="btn" value="Submit">
+                </form>
+            </div>
+        </section>
+    </div>   
+    <!-- contact section  end -->
+
+        
+
+    <!-- footer section start -->
+    <div id="footer">
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>About Us</h3>
+                    <p>
+                        The Ultimate Guide To Ace SDE Interviews.
+
+                    </p>
+                </div>
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="#home">home</a>
+                    <a href="#guided-paths">Guided Paths</a>
+                    <a href="#practice">practice</a>
+                    <a href="#contact">contact</a>
+                </div>
+                <div class="box">
+                    <h3>Follow Us</h3>
+                    <a href="">YouTube</a>
+                    <a href="">Linkedin</a>
+                    <a href="">Github</a>
+                    <a href="">Instagram</a>
+                </div>
+                <div class="box">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i>+91 9347020643</p>
+                    <p><i class="fas fa-envelope"></i>teamcodeflix@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i>warangal , Telangana 505403</p>
+                </div>
+            </div>
+            <div class="credit">
+                ©2023 <span> Code Flix</span>. All rights reserved
+            </div>
+        </section>
+    </div>    
+    <!-- footer section end -->
+
+
+        
+
+        
+    
+    
+    <!-- <img src="images/about-image.png" alt=""> -->
+
+     <script>
+
+        function changeTheme() {
+        var theme = document.getElementById("theme");
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          theme.src = "images/sun.png";
+        } else {
+          theme.src = "images/moon.png";
+        }
+      }
+        let menuBtn = document.querySelector('#menu-btn');
+let navbar =  document.querySelector('.header .flex .navbar');
+
+// js code to display a particular category of courses
+let list1 = document.getElementsByClassName("option");
+let list2 = document.getElementsByClassName("category");
+
+menuBtn.onclick = () =>{
+    menuBtn.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+
+
+function openDetails(type) {
+    for (var i = 0; i < list1.length; i++) {
+        list1[i].classList.remove("active-option");
+    }
+
+    for (var i = 0; i < list2.length; i++) {
+        list2[i].classList.remove("active-box");
+    }
+
+    event.currentTarget.classList.add("active-option");
+    document.getElementById(type).classList.add("active-box");
+}
+
+function openAll() {
+    for (var i = 0; i < list1.length; i++) {
+        list1[i].classList.remove("active-option");
+      }
+      for (var i = 0; i < list2.length; i++) {
+        list2[i].classList.add("active-box");
+      }
+      event.currentTarget.classList.add("active-option");
+}
+     </script>
+
+    <!-- <scrip src="script.js"> -->
+
+
+  </body>
+</html>
