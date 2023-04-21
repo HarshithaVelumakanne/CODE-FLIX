@@ -1,4 +1,5 @@
 <h1>CodeFlix</h1>
+<i>Tech Stack : HTML , CSS , JavaScript</i>
 <ul>
  <li>It is a Front End design for an e-learning application called CODEFLIX built with HTML, CSS, and  JavaScript.</li>
  <li>This website provides users with a structured way to learn about various technologies.</li>
